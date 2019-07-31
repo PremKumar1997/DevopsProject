@@ -18,5 +18,22 @@ public class EmployeeController {
 		employeesList.add(new Employee(1,"Prem","Kumar","abc@gmail.com"));
 		return employeesList;
     }
-
+	@RequestMapping("/id")
+    public int getEmployeesID() 
+    {
+		return 1;
+    }
+	
+	@RequestMapping("/update")
+    public List<Employee> getEmployeesUpdate() 
+    {
+		List<Employee> employeesList = new ArrayList<Employee>();
+		employeesList.add(new Employee(1,"Prem","Kumar","PremKumar@gmail.com"));
+		return employeesList;
+    }
+	@RequestMapping("/delete")
+    public String getEmployeesDelete() 
+    {
+		return "deleted Successfully";
+    }
 }
